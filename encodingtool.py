@@ -75,11 +75,19 @@ usage:
             print(usage)
         elif k in ('-f','--file'):
             #check file.
-            convert_file(v,'utf-8')
-            print("Done!")
+            if os.path.isfile(v):
+                convert_file(v,'utf-8')
+                print("Done!")
+            else:
+                print("Please input a file name.")
         elif k in ('-d','--dir'):
-            convert_dir(v,'utf-8')
-            print("Done!")
+            if os.path.isdir(v):
+                if not v.endswith('/'):
+                    v = v + '/'
+                convert_dir(v,'utf-8')
+                print("Done!")
+            else:
+                print("Please input a dir path.")
         elif k in ('-q','--query'):
             print("The encoding of the file {0} is {1}".format(v,query_encoding(v)))
         else:

@@ -1,0 +1,6 @@
+Specify target encoding support.
+Add setup.py
+Do not convert binary files.
+Recovery support.
+Log support.
+GUI support.

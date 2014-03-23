@@ -97,15 +97,3 @@ usage:
 
 if __name__ == "__main__":
     main(sys.argv)
-    #fileName = "E:/deskTopRec/2012-9-2012-10/mulitscreen.txt"
-    # fileName = "E:/deskTopRec/2012-9-2012-10/"
-    # backup_dir(fileName)
-    # file =  open(fileName, "rb")
-    # buf = file.read()
-    # result = chardet.detect(buf)
-    # print(result['encoding'])
-    # #in python 3.0
-    # #file = open(fileName,"r",encoding=result["encoding"])
-    # for line in file:
-    #     decoded_line = line.decode(result['encoding'])
-    #     print decoded_line
